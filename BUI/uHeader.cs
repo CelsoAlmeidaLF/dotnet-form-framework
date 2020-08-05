@@ -16,10 +16,5 @@ namespace BUI
         {
             InitializeComponent();
         }
-
-        private void infEmp_imgLogo_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

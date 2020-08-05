@@ -16,5 +16,17 @@ namespace UI
         {
             InitializeComponent();
         }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            if(UMenu.Width == 42)
+            {
+                UMenu.Width = 164;
+            }
+            else
+            {
+                UMenu.Width = 42;
+            }
+        }
     }
 }

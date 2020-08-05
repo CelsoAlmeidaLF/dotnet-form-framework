@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace UI.Properties {
+namespace BUI.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace UI.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("UI.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("BUI.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -63,9 +63,19 @@ namespace UI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Row_256 {
+        internal static System.Drawing.Bitmap Cube_Molecule_256 {
             get {
-                object obj = ResourceManager.GetObject("Row-256", resourceCulture);
+                object obj = ResourceManager.GetObject("Cube-Molecule-256", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Employee_256 {
+            get {
+                object obj = ResourceManager.GetObject("Employee-256", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

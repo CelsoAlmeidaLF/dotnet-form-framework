@@ -59,7 +59,7 @@
             this.infEmp_Descricao.AutoSize = true;
             this.infEmp_Descricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.infEmp_Descricao.ForeColor = System.Drawing.Color.White;
-            this.infEmp_Descricao.Location = new System.Drawing.Point(67, 34);
+            this.infEmp_Descricao.Location = new System.Drawing.Point(66, 34);
             this.infEmp_Descricao.Margin = new System.Windows.Forms.Padding(3, 4, 3, 0);
             this.infEmp_Descricao.Name = "infEmp_Descricao";
             this.infEmp_Descricao.Size = new System.Drawing.Size(124, 18);
@@ -71,7 +71,7 @@
             this.infEmp_nomeEmpresa.AutoSize = true;
             this.infEmp_nomeEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.infEmp_nomeEmpresa.ForeColor = System.Drawing.Color.White;
-            this.infEmp_nomeEmpresa.Location = new System.Drawing.Point(67, 6);
+            this.infEmp_nomeEmpresa.Location = new System.Drawing.Point(65, 6);
             this.infEmp_nomeEmpresa.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.infEmp_nomeEmpresa.Name = "infEmp_nomeEmpresa";
             this.infEmp_nomeEmpresa.Size = new System.Drawing.Size(126, 24);
@@ -80,13 +80,14 @@
             // 
             // infEmp_imgLogo
             // 
-            this.infEmp_imgLogo.Location = new System.Drawing.Point(0, 0);
-            this.infEmp_imgLogo.Margin = new System.Windows.Forms.Padding(0);
+            this.infEmp_imgLogo.Image = global::BUI.Properties.Resources.Cube_Molecule_256;
+            this.infEmp_imgLogo.Location = new System.Drawing.Point(12, 6);
+            this.infEmp_imgLogo.Margin = new System.Windows.Forms.Padding(4);
             this.infEmp_imgLogo.Name = "infEmp_imgLogo";
-            this.infEmp_imgLogo.Size = new System.Drawing.Size(64, 64);
+            this.infEmp_imgLogo.Size = new System.Drawing.Size(48, 48);
+            this.infEmp_imgLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.infEmp_imgLogo.TabIndex = 0;
             this.infEmp_imgLogo.TabStop = false;
-            this.infEmp_imgLogo.Click += new System.EventHandler(this.infEmp_imgLogo_Click);
             // 
             // inf_User
             // 
@@ -94,9 +95,9 @@
             this.inf_User.Controls.Add(this.infUser_Nome);
             this.inf_User.Controls.Add(this.infUser_fotoPerfil);
             this.inf_User.Dock = System.Windows.Forms.DockStyle.Right;
-            this.inf_User.Location = new System.Drawing.Point(658, 0);
+            this.inf_User.Location = new System.Drawing.Point(696, 0);
             this.inf_User.Name = "inf_User";
-            this.inf_User.Size = new System.Drawing.Size(242, 64);
+            this.inf_User.Size = new System.Drawing.Size(204, 64);
             this.inf_User.TabIndex = 1;
             // 
             // infUser_Descricao
@@ -104,7 +105,7 @@
             this.infUser_Descricao.AutoSize = true;
             this.infUser_Descricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.infUser_Descricao.ForeColor = System.Drawing.Color.White;
-            this.infUser_Descricao.Location = new System.Drawing.Point(77, 34);
+            this.infUser_Descricao.Location = new System.Drawing.Point(55, 34);
             this.infUser_Descricao.Margin = new System.Windows.Forms.Padding(3, 4, 3, 0);
             this.infUser_Descricao.Name = "infUser_Descricao";
             this.infUser_Descricao.Size = new System.Drawing.Size(98, 18);
@@ -116,7 +117,7 @@
             this.infUser_Nome.AutoSize = true;
             this.infUser_Nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.infUser_Nome.ForeColor = System.Drawing.Color.White;
-            this.infUser_Nome.Location = new System.Drawing.Point(94, 6);
+            this.infUser_Nome.Location = new System.Drawing.Point(72, 6);
             this.infUser_Nome.Margin = new System.Windows.Forms.Padding(3, 6, 3, 0);
             this.infUser_Nome.Name = "infUser_Nome";
             this.infUser_Nome.Size = new System.Drawing.Size(81, 24);
@@ -125,10 +126,12 @@
             // 
             // infUser_fotoPerfil
             // 
-            this.infUser_fotoPerfil.Location = new System.Drawing.Point(178, 0);
-            this.infUser_fotoPerfil.Margin = new System.Windows.Forms.Padding(0);
+            this.infUser_fotoPerfil.Image = global::BUI.Properties.Resources.Employee_256;
+            this.infUser_fotoPerfil.Location = new System.Drawing.Point(156, 10);
+            this.infUser_fotoPerfil.Margin = new System.Windows.Forms.Padding(0, 0, 6, 0);
             this.infUser_fotoPerfil.Name = "infUser_fotoPerfil";
-            this.infUser_fotoPerfil.Size = new System.Drawing.Size(64, 64);
+            this.infUser_fotoPerfil.Size = new System.Drawing.Size(42, 42);
+            this.infUser_fotoPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.infUser_fotoPerfil.TabIndex = 3;
             this.infUser_fotoPerfil.TabStop = false;
             // 
@@ -137,7 +140,7 @@
             this.uPainel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uPainel.Location = new System.Drawing.Point(232, 0);
             this.uPainel.Name = "uPainel";
-            this.uPainel.Size = new System.Drawing.Size(426, 64);
+            this.uPainel.Size = new System.Drawing.Size(464, 64);
             this.uPainel.TabIndex = 2;
             // 
             // uHeader

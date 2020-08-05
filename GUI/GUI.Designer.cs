@@ -1,4 +1,6 @@
-﻿namespace UI
+﻿using BUI;
+
+namespace UI
 {
     partial class GUI
     {
@@ -29,12 +31,14 @@
         private void InitializeComponent()
         {
             this.UHeader = new System.Windows.Forms.Panel();
+            this.u_Header = new BUI.uHeader();
             this.linhaHeader = new System.Windows.Forms.Panel();
             this.UStaus = new System.Windows.Forms.Panel();
+            this.linhaStatus = new System.Windows.Forms.Panel();
             this.UMenu = new System.Windows.Forms.Panel();
             this.linhaMenu = new System.Windows.Forms.Panel();
+            this.btnMenu = new System.Windows.Forms.Button();
             this.USection = new System.Windows.Forms.Panel();
-            this.linhaStatus = new System.Windows.Forms.Panel();
             this.UHeader.SuspendLayout();
             this.UStaus.SuspendLayout();
             this.UMenu.SuspendLayout();
@@ -43,12 +47,22 @@
             // UHeader
             // 
             this.UHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.UHeader.Controls.Add(this.u_Header);
             this.UHeader.Controls.Add(this.linhaHeader);
             this.UHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.UHeader.Location = new System.Drawing.Point(0, 0);
             this.UHeader.Name = "UHeader";
             this.UHeader.Size = new System.Drawing.Size(884, 64);
             this.UHeader.TabIndex = 0;
+            // 
+            // u_Header
+            // 
+            this.u_Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.u_Header.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.u_Header.Location = new System.Drawing.Point(0, 0);
+            this.u_Header.Name = "u_Header";
+            this.u_Header.Size = new System.Drawing.Size(884, 62);
+            this.u_Header.TabIndex = 1;
             // 
             // linhaHeader
             // 
@@ -64,38 +78,10 @@
             this.UStaus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.UStaus.Controls.Add(this.linhaStatus);
             this.UStaus.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.UStaus.Location = new System.Drawing.Point(0, 513);
+            this.UStaus.Location = new System.Drawing.Point(0, 509);
             this.UStaus.Name = "UStaus";
             this.UStaus.Size = new System.Drawing.Size(884, 32);
             this.UStaus.TabIndex = 2;
-            // 
-            // UMenu
-            // 
-            this.UMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.UMenu.Controls.Add(this.linhaMenu);
-            this.UMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.UMenu.Location = new System.Drawing.Point(0, 64);
-            this.UMenu.Name = "UMenu";
-            this.UMenu.Size = new System.Drawing.Size(42, 449);
-            this.UMenu.TabIndex = 3;
-            // 
-            // linhaMenu
-            // 
-            this.linhaMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(117)))));
-            this.linhaMenu.Dock = System.Windows.Forms.DockStyle.Right;
-            this.linhaMenu.Location = new System.Drawing.Point(41, 0);
-            this.linhaMenu.Name = "linhaMenu";
-            this.linhaMenu.Size = new System.Drawing.Size(1, 449);
-            this.linhaMenu.TabIndex = 0;
-            // 
-            // USection
-            // 
-            this.USection.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.USection.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.USection.Location = new System.Drawing.Point(42, 64);
-            this.USection.Name = "USection";
-            this.USection.Size = new System.Drawing.Size(842, 449);
-            this.USection.TabIndex = 4;
             // 
             // linhaStatus
             // 
@@ -106,11 +92,54 @@
             this.linhaStatus.Size = new System.Drawing.Size(884, 1);
             this.linhaStatus.TabIndex = 0;
             // 
+            // UMenu
+            // 
+            this.UMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.UMenu.Controls.Add(this.linhaMenu);
+            this.UMenu.Controls.Add(this.btnMenu);
+            this.UMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.UMenu.Location = new System.Drawing.Point(0, 64);
+            this.UMenu.Name = "UMenu";
+            this.UMenu.Size = new System.Drawing.Size(42, 445);
+            this.UMenu.TabIndex = 3;
+            // 
+            // linhaMenu
+            // 
+            this.linhaMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(117)))));
+            this.linhaMenu.Dock = System.Windows.Forms.DockStyle.Right;
+            this.linhaMenu.Location = new System.Drawing.Point(41, 0);
+            this.linhaMenu.Name = "linhaMenu";
+            this.linhaMenu.Size = new System.Drawing.Size(1, 445);
+            this.linhaMenu.TabIndex = 0;
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.BackgroundImage = global::UI.Properties.Resources.Row_256;
+            this.btnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMenu.FlatAppearance.BorderSize = 0;
+            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenu.Location = new System.Drawing.Point(9, 9);
+            this.btnMenu.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(24, 24);
+            this.btnMenu.TabIndex = 1;
+            this.btnMenu.UseVisualStyleBackColor = true;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
+            // USection
+            // 
+            this.USection.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.USection.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.USection.Location = new System.Drawing.Point(42, 64);
+            this.USection.Name = "USection";
+            this.USection.Size = new System.Drawing.Size(842, 445);
+            this.USection.TabIndex = 4;
+            // 
             // GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 545);
+            this.ClientSize = new System.Drawing.Size(884, 541);
             this.Controls.Add(this.USection);
             this.Controls.Add(this.UMenu);
             this.Controls.Add(this.UStaus);
@@ -134,5 +163,7 @@
         private System.Windows.Forms.Panel UMenu;
         private System.Windows.Forms.Panel linhaMenu;
         private System.Windows.Forms.Panel USection;
+        private uHeader u_Header;
+        private System.Windows.Forms.Button btnMenu;
     }
 }
