@@ -47,7 +47,7 @@
             this.UHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.UHeader.Location = new System.Drawing.Point(0, 0);
             this.UHeader.Name = "UHeader";
-            this.UHeader.Size = new System.Drawing.Size(893, 64);
+            this.UHeader.Size = new System.Drawing.Size(884, 64);
             this.UHeader.TabIndex = 0;
             // 
             // linhaHeader
@@ -56,7 +56,7 @@
             this.linhaHeader.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.linhaHeader.Location = new System.Drawing.Point(0, 62);
             this.linhaHeader.Name = "linhaHeader";
-            this.linhaHeader.Size = new System.Drawing.Size(893, 2);
+            this.linhaHeader.Size = new System.Drawing.Size(884, 2);
             this.linhaHeader.TabIndex = 0;
             // 
             // UStaus
@@ -66,7 +66,7 @@
             this.UStaus.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.UStaus.Location = new System.Drawing.Point(0, 513);
             this.UStaus.Name = "UStaus";
-            this.UStaus.Size = new System.Drawing.Size(893, 32);
+            this.UStaus.Size = new System.Drawing.Size(884, 32);
             this.UStaus.TabIndex = 2;
             // 
             // UMenu
@@ -94,7 +94,7 @@
             this.USection.Dock = System.Windows.Forms.DockStyle.Fill;
             this.USection.Location = new System.Drawing.Point(42, 64);
             this.USection.Name = "USection";
-            this.USection.Size = new System.Drawing.Size(851, 449);
+            this.USection.Size = new System.Drawing.Size(842, 449);
             this.USection.TabIndex = 4;
             // 
             // linhaStatus
@@ -103,14 +103,14 @@
             this.linhaStatus.Dock = System.Windows.Forms.DockStyle.Top;
             this.linhaStatus.Location = new System.Drawing.Point(0, 0);
             this.linhaStatus.Name = "linhaStatus";
-            this.linhaStatus.Size = new System.Drawing.Size(893, 1);
+            this.linhaStatus.Size = new System.Drawing.Size(884, 1);
             this.linhaStatus.TabIndex = 0;
             // 
             // GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(893, 545);
+            this.ClientSize = new System.Drawing.Size(884, 545);
             this.Controls.Add(this.USection);
             this.Controls.Add(this.UMenu);
             this.Controls.Add(this.UStaus);
