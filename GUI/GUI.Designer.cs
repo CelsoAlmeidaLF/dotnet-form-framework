@@ -31,7 +31,6 @@ namespace UI
         private void InitializeComponent()
         {
             this.UHeader = new System.Windows.Forms.Panel();
-            this.u_Header = new BUI.uHeader();
             this.linhaHeader = new System.Windows.Forms.Panel();
             this.UStaus = new System.Windows.Forms.Panel();
             this.linhaStatus = new System.Windows.Forms.Panel();
@@ -39,9 +38,12 @@ namespace UI
             this.linhaMenu = new System.Windows.Forms.Panel();
             this.btnMenu = new System.Windows.Forms.Button();
             this.USection = new System.Windows.Forms.Panel();
+            this.u_Header = new BUI.uHeader();
+            this.uDocument = new BUI.uSection();
             this.UHeader.SuspendLayout();
             this.UStaus.SuspendLayout();
             this.UMenu.SuspendLayout();
+            this.USection.SuspendLayout();
             this.SuspendLayout();
             // 
             // UHeader
@@ -55,22 +57,13 @@ namespace UI
             this.UHeader.Size = new System.Drawing.Size(884, 64);
             this.UHeader.TabIndex = 0;
             // 
-            // u_Header
-            // 
-            this.u_Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.u_Header.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.u_Header.Location = new System.Drawing.Point(0, 0);
-            this.u_Header.Name = "u_Header";
-            this.u_Header.Size = new System.Drawing.Size(884, 62);
-            this.u_Header.TabIndex = 1;
-            // 
             // linhaHeader
             // 
-            this.linhaHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.linhaHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(117)))));
             this.linhaHeader.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.linhaHeader.Location = new System.Drawing.Point(0, 62);
+            this.linhaHeader.Location = new System.Drawing.Point(0, 63);
             this.linhaHeader.Name = "linhaHeader";
-            this.linhaHeader.Size = new System.Drawing.Size(884, 2);
+            this.linhaHeader.Size = new System.Drawing.Size(884, 1);
             this.linhaHeader.TabIndex = 0;
             // 
             // UStaus
@@ -129,11 +122,29 @@ namespace UI
             // USection
             // 
             this.USection.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.USection.Controls.Add(this.uDocument);
             this.USection.Dock = System.Windows.Forms.DockStyle.Fill;
             this.USection.Location = new System.Drawing.Point(42, 64);
             this.USection.Name = "USection";
             this.USection.Size = new System.Drawing.Size(842, 445);
             this.USection.TabIndex = 4;
+            // 
+            // u_Header
+            // 
+            this.u_Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.u_Header.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.u_Header.Location = new System.Drawing.Point(0, 0);
+            this.u_Header.Name = "u_Header";
+            this.u_Header.Size = new System.Drawing.Size(884, 63);
+            this.u_Header.TabIndex = 1;
+            // 
+            // uDocument
+            // 
+            this.uDocument.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uDocument.Location = new System.Drawing.Point(0, 0);
+            this.uDocument.Name = "uDocument";
+            this.uDocument.Size = new System.Drawing.Size(842, 445);
+            this.uDocument.TabIndex = 0;
             // 
             // GUI
             // 
@@ -150,6 +161,7 @@ namespace UI
             this.UHeader.ResumeLayout(false);
             this.UStaus.ResumeLayout(false);
             this.UMenu.ResumeLayout(false);
+            this.USection.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -165,5 +177,6 @@ namespace UI
         private System.Windows.Forms.Panel USection;
         private uHeader u_Header;
         private System.Windows.Forms.Button btnMenu;
+        private uSection uDocument;
     }
 }
