@@ -48,7 +48,7 @@
             this.uToolbar.Dock = System.Windows.Forms.DockStyle.Top;
             this.uToolbar.Location = new System.Drawing.Point(0, 0);
             this.uToolbar.Name = "uToolbar";
-            this.uToolbar.Size = new System.Drawing.Size(800, 32);
+            this.uToolbar.Size = new System.Drawing.Size(800, 24);
             this.uToolbar.TabIndex = 0;
             // 
             // toolBar_Title
@@ -59,7 +59,7 @@
             this.toolBar_Title.Dock = System.Windows.Forms.DockStyle.Left;
             this.toolBar_Title.Location = new System.Drawing.Point(12, 0);
             this.toolBar_Title.Name = "toolBar_Title";
-            this.toolBar_Title.Size = new System.Drawing.Size(180, 30);
+            this.toolBar_Title.Size = new System.Drawing.Size(180, 22);
             this.toolBar_Title.TabIndex = 4;
             // 
             // btnClose
@@ -68,11 +68,11 @@
             this.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(148, 0);
+            this.btnClose.Location = new System.Drawing.Point(158, 0);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(32, 30);
+            this.btnClose.Size = new System.Drawing.Size(22, 22);
             this.btnClose.TabIndex = 1;
             this.btnClose.Text = "X";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -80,12 +80,12 @@
             // uTitle
             // 
             this.uTitle.AutoSize = true;
-            this.uTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uTitle.ForeColor = System.Drawing.Color.White;
-            this.uTitle.Location = new System.Drawing.Point(5, 6);
+            this.uTitle.Location = new System.Drawing.Point(24, 3);
             this.uTitle.Margin = new System.Windows.Forms.Padding(5);
             this.uTitle.Name = "uTitle";
-            this.uTitle.Size = new System.Drawing.Size(134, 20);
+            this.uTitle.Size = new System.Drawing.Size(111, 16);
             this.uTitle.TabIndex = 0;
             this.uTitle.Text = "Documento  [ 01 ]";
             // 
@@ -94,14 +94,14 @@
             this.linha.Dock = System.Windows.Forms.DockStyle.Left;
             this.linha.Location = new System.Drawing.Point(0, 0);
             this.linha.Name = "linha";
-            this.linha.Size = new System.Drawing.Size(12, 30);
+            this.linha.Size = new System.Drawing.Size(12, 22);
             this.linha.TabIndex = 3;
             // 
             // linhaToolbar
             // 
             this.linhaToolbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.linhaToolbar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.linhaToolbar.Location = new System.Drawing.Point(0, 30);
+            this.linhaToolbar.Location = new System.Drawing.Point(0, 22);
             this.linhaToolbar.Name = "linhaToolbar";
             this.linhaToolbar.Size = new System.Drawing.Size(800, 2);
             this.linhaToolbar.TabIndex = 2;
@@ -110,9 +110,9 @@
             // 
             this.uArea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
             this.uArea.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uArea.Location = new System.Drawing.Point(0, 32);
+            this.uArea.Location = new System.Drawing.Point(0, 24);
             this.uArea.Name = "uArea";
-            this.uArea.Size = new System.Drawing.Size(800, 468);
+            this.uArea.Size = new System.Drawing.Size(800, 476);
             this.uArea.TabIndex = 1;
             // 
             // uSection

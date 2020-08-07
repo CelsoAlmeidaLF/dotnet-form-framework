@@ -39,11 +39,14 @@ namespace UI
             this.btnMenu = new System.Windows.Forms.Button();
             this.USection = new System.Windows.Forms.Panel();
             this.u_Header = new BUI.uHeader();
-            this.uDocument = new BUI.uSection();
+            this.uToolBar = new System.Windows.Forms.Panel();
+            this.uDesktop = new BUI.uSection();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.UHeader.SuspendLayout();
             this.UStaus.SuspendLayout();
             this.UMenu.SuspendLayout();
             this.USection.SuspendLayout();
+            this.uToolBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // UHeader
@@ -111,10 +114,10 @@ namespace UI
             this.btnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMenu.FlatAppearance.BorderSize = 0;
             this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenu.Location = new System.Drawing.Point(9, 9);
+            this.btnMenu.Location = new System.Drawing.Point(12, 7);
             this.btnMenu.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
             this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(24, 24);
+            this.btnMenu.Size = new System.Drawing.Size(16, 16);
             this.btnMenu.TabIndex = 1;
             this.btnMenu.UseVisualStyleBackColor = true;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
@@ -122,7 +125,8 @@ namespace UI
             // USection
             // 
             this.USection.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.USection.Controls.Add(this.uDocument);
+            this.USection.Controls.Add(this.uDesktop);
+            this.USection.Controls.Add(this.uToolBar);
             this.USection.Dock = System.Windows.Forms.DockStyle.Fill;
             this.USection.Location = new System.Drawing.Point(42, 64);
             this.USection.Name = "USection";
@@ -138,13 +142,32 @@ namespace UI
             this.u_Header.Size = new System.Drawing.Size(884, 63);
             this.u_Header.TabIndex = 1;
             // 
-            // uDocument
+            // uToolBar
             // 
-            this.uDocument.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uDocument.Location = new System.Drawing.Point(0, 0);
-            this.uDocument.Name = "uDocument";
-            this.uDocument.Size = new System.Drawing.Size(842, 445);
-            this.uDocument.TabIndex = 0;
+            this.uToolBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.uToolBar.Controls.Add(this.panel1);
+            this.uToolBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.uToolBar.Location = new System.Drawing.Point(0, 0);
+            this.uToolBar.Name = "uToolBar";
+            this.uToolBar.Size = new System.Drawing.Size(842, 32);
+            this.uToolBar.TabIndex = 1;
+            // 
+            // uDesktop
+            // 
+            this.uDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uDesktop.Location = new System.Drawing.Point(0, 32);
+            this.uDesktop.Name = "uDesktop";
+            this.uDesktop.Size = new System.Drawing.Size(842, 413);
+            this.uDesktop.TabIndex = 2;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(117)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 31);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(842, 1);
+            this.panel1.TabIndex = 0;
             // 
             // GUI
             // 
@@ -162,6 +185,7 @@ namespace UI
             this.UStaus.ResumeLayout(false);
             this.UMenu.ResumeLayout(false);
             this.USection.ResumeLayout(false);
+            this.uToolBar.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -177,6 +201,8 @@ namespace UI
         private System.Windows.Forms.Panel USection;
         private uHeader u_Header;
         private System.Windows.Forms.Button btnMenu;
-        private uSection uDocument;
+        private uSection uDesktop;
+        private System.Windows.Forms.Panel uToolBar;
+        private System.Windows.Forms.Panel panel1;
     }
 }
