@@ -40,16 +40,16 @@ namespace Systekna.Framework.Forms
             this.btnMenu = new System.Windows.Forms.Button();
             this.Section = new System.Windows.Forms.Panel();
             this.SectionViews = new Systekna.Framework.WFControl.Views.SectionViews();
-            this.ToolBar = new System.Windows.Forms.Panel();
-            this.btnNovo = new System.Windows.Forms.Button();
-            this.btnConfig = new System.Windows.Forms.Button();
-            this.btnRefresh = new System.Windows.Forms.Button();
             this.linhaHorizontalToolbar = new System.Windows.Forms.Panel();
-
-            this.Section.SuspendLayout();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.btnConfig = new System.Windows.Forms.Button();
+            this.ToolBar = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnNovo = new System.Windows.Forms.Button();
             this.Header.SuspendLayout();
             this.Status.SuspendLayout();
             this.Menu.SuspendLayout();
+            this.Section.SuspendLayout();
             this.ToolBar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -166,33 +166,28 @@ namespace Systekna.Framework.Forms
             this.SectionViews.Size = new System.Drawing.Size(974, 465);
             this.SectionViews.TabIndex = 2;
             // 
-            // ToolBar
+            // linhaHorizontalToolbar
             // 
-            this.ToolBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.ToolBar.Controls.Add(this.btnNovo);
-            this.ToolBar.Controls.Add(this.btnConfig);
-            this.ToolBar.Controls.Add(this.btnRefresh);
-            this.ToolBar.Controls.Add(this.linhaHorizontalToolbar);
-            this.ToolBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ToolBar.Location = new System.Drawing.Point(0, 0);
-            this.ToolBar.Name = "ToolBar";
-            this.ToolBar.Size = new System.Drawing.Size(974, 32);
-            this.ToolBar.TabIndex = 1;
+            this.linhaHorizontalToolbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(117)))));
+            this.linhaHorizontalToolbar.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.linhaHorizontalToolbar.Location = new System.Drawing.Point(0, 31);
+            this.linhaHorizontalToolbar.Name = "linhaHorizontalToolbar";
+            this.linhaHorizontalToolbar.Size = new System.Drawing.Size(974, 1);
+            this.linhaHorizontalToolbar.TabIndex = 0;
             // 
-            // btnNovo
+            // btnRefresh
             // 
-            this.btnNovo.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnNovo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnNovo.FlatAppearance.BorderSize = 0;
-            this.btnNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNovo.ForeColor = System.Drawing.Color.White;
-            this.btnNovo.Location = new System.Drawing.Point(0, 0);
-            this.btnNovo.Name = "btnNovo";
-            this.btnNovo.Size = new System.Drawing.Size(42, 31);
-            this.btnNovo.TabIndex = 3;
-            this.btnNovo.Text = "Novo";
-            this.btnNovo.UseVisualStyleBackColor = true;
-            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
+            this.btnRefresh.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnRefresh.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnRefresh.FlatAppearance.BorderSize = 0;
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.Location = new System.Drawing.Point(942, 0);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(32, 31);
+            this.btnRefresh.TabIndex = 1;
+            this.btnRefresh.Text = "RF";
+            this.btnRefresh.UseVisualStyleBackColor = true;
             // 
             // btnConfig
             // 
@@ -209,28 +204,42 @@ namespace Systekna.Framework.Forms
             this.btnConfig.UseVisualStyleBackColor = true;
             this.btnConfig.Click += new System.EventHandler(this.btnConfig_Click);
             // 
-            // btnRefresh
+            // ToolBar
             // 
-            this.btnRefresh.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnRefresh.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnRefresh.FlatAppearance.BorderSize = 0;
-            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRefresh.ForeColor = System.Drawing.Color.White;
-            this.btnRefresh.Location = new System.Drawing.Point(942, 0);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(32, 31);
-            this.btnRefresh.TabIndex = 1;
-            this.btnRefresh.Text = "RF";
-            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.ToolBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.ToolBar.Controls.Add(this.btnNovo);
+            this.ToolBar.Controls.Add(this.panel2);
+            this.ToolBar.Controls.Add(this.btnConfig);
+            this.ToolBar.Controls.Add(this.btnRefresh);
+            this.ToolBar.Controls.Add(this.linhaHorizontalToolbar);
+            this.ToolBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ToolBar.Location = new System.Drawing.Point(0, 0);
+            this.ToolBar.Name = "ToolBar";
+            this.ToolBar.Size = new System.Drawing.Size(974, 32);
+            this.ToolBar.TabIndex = 1;
             // 
-            // linhaHorizontalToolbar
+            // panel2
             // 
-            this.linhaHorizontalToolbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(117)))));
-            this.linhaHorizontalToolbar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.linhaHorizontalToolbar.Location = new System.Drawing.Point(0, 31);
-            this.linhaHorizontalToolbar.Name = "linhaHorizontalToolbar";
-            this.linhaHorizontalToolbar.Size = new System.Drawing.Size(974, 1);
-            this.linhaHorizontalToolbar.TabIndex = 0;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(32, 31);
+            this.panel2.TabIndex = 7;
+            // 
+            // btnNovo
+            // 
+            this.btnNovo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnNovo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnNovo.FlatAppearance.BorderSize = 0;
+            this.btnNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNovo.ForeColor = System.Drawing.Color.White;
+            this.btnNovo.Location = new System.Drawing.Point(32, 0);
+            this.btnNovo.Name = "btnNovo";
+            this.btnNovo.Size = new System.Drawing.Size(42, 31);
+            this.btnNovo.TabIndex = 10;
+            this.btnNovo.Text = "Novo";
+            this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // AdminForm
             // 
@@ -241,6 +250,7 @@ namespace Systekna.Framework.Forms
             this.Controls.Add(this.Menu);
             this.Controls.Add(this.Status);
             this.Controls.Add(this.Header);
+            this.MinimumSize = new System.Drawing.Size(1032, 632);
             this.Name = "AdminForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Systekna Dashboard Simple 0.1";
@@ -267,11 +277,12 @@ namespace Systekna.Framework.Forms
         private Systekna.Framework.WFControl.Views.toolHeader toolHeader;
         private System.Windows.Forms.Button btnMenu;
         private Systekna.Framework.WFControl.Views.SectionViews SectionViews;
-        private System.Windows.Forms.Panel ToolBar;
-        private System.Windows.Forms.Panel linhaHorizontalToolbar;
         private System.Windows.Forms.Label infoVersion;
+        private System.Windows.Forms.Panel ToolBar;
+        private System.Windows.Forms.Button btnConfig;
         private System.Windows.Forms.Button btnRefresh;
-        private System.Windows.Forms.Button btnConfig; 
+        private System.Windows.Forms.Panel linhaHorizontalToolbar;
         private System.Windows.Forms.Button btnNovo;
+        private System.Windows.Forms.Panel panel2;
     }
 }

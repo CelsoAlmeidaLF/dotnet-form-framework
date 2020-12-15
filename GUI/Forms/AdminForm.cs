@@ -1,12 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace Systekna.Framework.Forms
 {
     public partial class AdminForm : Form
     {
-        int idDoc = 0;
-
         public AdminForm()
         {
             InitializeComponent();
@@ -25,8 +24,9 @@ namespace Systekna.Framework.Forms
         }
 
         private void btnNovo_Click(object sender, EventArgs e)
-        {   idDoc ++;
-            string title = $"Novo Documento [{idDoc}]";
+        {
+            
+            var title = $"Documento [{SectionViews.NDoc}]";
             SectionViews.Start(true, title);
         }
 
