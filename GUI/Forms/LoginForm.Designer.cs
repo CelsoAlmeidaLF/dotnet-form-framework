@@ -29,13 +29,24 @@ namespace Systekna.Framework.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.LoginViews = new BUI.ViewsLogin.LoginView();
             this.SuspendLayout();
+            // 
+            // LoginViews
+            // 
+            this.LoginViews.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.LoginViews.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LoginViews.Location = new System.Drawing.Point(0, 0);
+            this.LoginViews.Name = "LoginViews";
+            this.LoginViews.Size = new System.Drawing.Size(1016, 593);
+            this.LoginViews.TabIndex = 0;
             // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1016, 593);
+            this.Controls.Add(this.LoginViews);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -45,5 +56,7 @@ namespace Systekna.Framework.Forms
         }
 
         #endregion
+
+        private BUI.ViewsLogin.LoginView LoginViews;
     }
 }

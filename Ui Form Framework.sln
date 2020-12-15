@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ui Form", "GUI\Ui Form.cspr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFControl", "BUI\WFControl.csproj", "{F8346B35-A4B4-431F-91F6-A2BF1A684F8D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ui Project", "Ui Project", "{9D9DB471-0BF3-43E4-8007-B64CD45B7993}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{14FD4937-1D9F-46BF-B58F-1AEE884710A1} = {9D9DB471-0BF3-43E4-8007-B64CD45B7993}
+		{F8346B35-A4B4-431F-91F6-A2BF1A684F8D} = {9D9DB471-0BF3-43E4-8007-B64CD45B7993}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8F125861-9298-4832-ACDA-CDEB5C2A61CF}
