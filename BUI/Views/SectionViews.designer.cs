@@ -1,6 +1,6 @@
-﻿namespace BUI
+﻿namespace Systekna.Framework.WFControl.Views
 {
-    partial class uSection
+    partial class SectionViews
     {
         /// <summary> 
         /// Variável de designer necessária.
@@ -48,7 +48,7 @@
             this.uToolbar.Dock = System.Windows.Forms.DockStyle.Top;
             this.uToolbar.Location = new System.Drawing.Point(0, 0);
             this.uToolbar.Name = "uToolbar";
-            this.uToolbar.Size = new System.Drawing.Size(800, 24);
+            this.uToolbar.Size = new System.Drawing.Size(1032, 24);
             this.uToolbar.TabIndex = 0;
             // 
             // toolBar_Title
@@ -103,7 +103,7 @@
             this.linhaToolbar.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.linhaToolbar.Location = new System.Drawing.Point(0, 22);
             this.linhaToolbar.Name = "linhaToolbar";
-            this.linhaToolbar.Size = new System.Drawing.Size(800, 2);
+            this.linhaToolbar.Size = new System.Drawing.Size(1032, 2);
             this.linhaToolbar.TabIndex = 2;
             // 
             // uArea
@@ -112,17 +112,17 @@
             this.uArea.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uArea.Location = new System.Drawing.Point(0, 24);
             this.uArea.Name = "uArea";
-            this.uArea.Size = new System.Drawing.Size(800, 476);
+            this.uArea.Size = new System.Drawing.Size(1032, 608);
             this.uArea.TabIndex = 1;
             // 
-            // uSection
+            // Section
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.uArea);
             this.Controls.Add(this.uToolbar);
-            this.Name = "uSection";
-            this.Size = new System.Drawing.Size(800, 500);
+            this.Name = "Section";
+            this.Size = new System.Drawing.Size(1032, 632);
             this.uToolbar.ResumeLayout(false);
             this.toolBar_Title.ResumeLayout(false);
             this.toolBar_Title.PerformLayout();
