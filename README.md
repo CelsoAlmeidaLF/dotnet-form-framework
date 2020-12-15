@@ -1,6 +1,2 @@
-# GUI Net.framework
+# Form Net.framework
 *Layout para .Net Framework*
-
-## Instalação
-
-
