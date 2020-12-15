@@ -42,6 +42,7 @@ namespace Systekna.Framework.Forms
             this.MinimizeBox = false;
             this.Name = "ConfigForm";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Painel Config";
             this.ResumeLayout(false);
 
