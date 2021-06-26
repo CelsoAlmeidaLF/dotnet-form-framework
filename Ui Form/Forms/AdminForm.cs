@@ -10,26 +10,18 @@ namespace Systekna.Framework.Forms
         {
             InitializeComponent();
         }
-        private void btnMenu_Click(object sender, EventArgs e)
+
+        private void btnMenu_MouseClick(object sender, MouseEventArgs e)
         {
-            if(Menu.Width == 42)
-                Menu.Width = 164;
+            if (fLateral.Width == 42)
+                fLateral.Width = 164;
             else
-                Menu.Width = 42;
+                fLateral.Width = 42;
         }
 
-        private void btnConfig_Click(object sender, EventArgs e)
-        { 
-            _configForm.ShowDialog();
-        }
-
-        private void btnNovo_Click(object sender, EventArgs e)
+        private void AdminForm_Load(object sender, EventArgs e)
         {
-            
-            var title = $"Documento [{SectionViews.NDoc}]";
-            SectionViews.Start(true, title);
+            sectionViews.Start(true, "Documents [0]");
         }
-
-        private ConfigForm _configForm = new ConfigForm();
     }
 }

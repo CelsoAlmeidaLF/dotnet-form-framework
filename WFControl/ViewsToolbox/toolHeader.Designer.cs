@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.inf_Empresa = new System.Windows.Forms.Panel();
+            this.link_page = new System.Windows.Forms.LinkLabel();
             this.infEmp_nomeEmpresa = new System.Windows.Forms.Label();
+            this.infEmp_imgLogo = new System.Windows.Forms.PictureBox();
             this.inf_User = new System.Windows.Forms.Panel();
             this.infUser_Descricao = new System.Windows.Forms.Label();
             this.infUser_Nome = new System.Windows.Forms.Label();
-            this.uPainel = new System.Windows.Forms.Panel();
-            this.link_page = new System.Windows.Forms.LinkLabel();
             this.infUser_fotoPerfil = new System.Windows.Forms.PictureBox();
-            this.infEmp_imgLogo = new System.Windows.Forms.PictureBox();
+            this.uPainel = new System.Windows.Forms.Panel();
             this.inf_Empresa.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.infEmp_imgLogo)).BeginInit();
             this.inf_User.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.infUser_fotoPerfil)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.infEmp_imgLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // inf_Empresa
@@ -54,6 +54,20 @@
             this.inf_Empresa.Size = new System.Drawing.Size(232, 64);
             this.inf_Empresa.TabIndex = 0;
             // 
+            // link_page
+            // 
+            this.link_page.ActiveLinkColor = System.Drawing.Color.RoyalBlue;
+            this.link_page.AutoSize = true;
+            this.link_page.Cursor = System.Windows.Forms.Cursors.Default;
+            this.link_page.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.link_page.LinkColor = System.Drawing.Color.White;
+            this.link_page.Location = new System.Drawing.Point(68, 34);
+            this.link_page.Name = "link_page";
+            this.link_page.Size = new System.Drawing.Size(117, 15);
+            this.link_page.TabIndex = 2;
+            this.link_page.TabStop = true;
+            this.link_page.Text = "www.seusite.com.br";
+            // 
             // infEmp_nomeEmpresa
             // 
             this.infEmp_nomeEmpresa.AutoSize = true;
@@ -65,6 +79,17 @@
             this.infEmp_nomeEmpresa.Size = new System.Drawing.Size(126, 24);
             this.infEmp_nomeEmpresa.TabIndex = 1;
             this.infEmp_nomeEmpresa.Text = "suaEmpresa";
+            // 
+            // infEmp_imgLogo
+            // 
+            this.infEmp_imgLogo.Image = global::BUI.Properties.Resources.Cube_Molecule_256;
+            this.infEmp_imgLogo.Location = new System.Drawing.Point(12, 10);
+            this.infEmp_imgLogo.Margin = new System.Windows.Forms.Padding(4);
+            this.infEmp_imgLogo.Name = "infEmp_imgLogo";
+            this.infEmp_imgLogo.Size = new System.Drawing.Size(48, 48);
+            this.infEmp_imgLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.infEmp_imgLogo.TabIndex = 0;
+            this.infEmp_imgLogo.TabStop = false;
             // 
             // inf_User
             // 
@@ -101,28 +126,6 @@
             this.infUser_Nome.TabIndex = 3;
             this.infUser_Nome.Text = "Usuario";
             // 
-            // uPainel
-            // 
-            this.uPainel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uPainel.Location = new System.Drawing.Point(232, 0);
-            this.uPainel.Name = "uPainel";
-            this.uPainel.Size = new System.Drawing.Size(596, 64);
-            this.uPainel.TabIndex = 2;
-            // 
-            // link_page
-            // 
-            this.link_page.ActiveLinkColor = System.Drawing.Color.RoyalBlue;
-            this.link_page.AutoSize = true;
-            this.link_page.Cursor = System.Windows.Forms.Cursors.Default;
-            this.link_page.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.link_page.LinkColor = System.Drawing.Color.White;
-            this.link_page.Location = new System.Drawing.Point(68, 34);
-            this.link_page.Name = "link_page";
-            this.link_page.Size = new System.Drawing.Size(117, 15);
-            this.link_page.TabIndex = 2;
-            this.link_page.TabStop = true;
-            this.link_page.Text = "www.seusite.com.br";
-            // 
             // infUser_fotoPerfil
             // 
             this.infUser_fotoPerfil.Image = global::BUI.Properties.Resources.Employee_256;
@@ -134,18 +137,15 @@
             this.infUser_fotoPerfil.TabIndex = 3;
             this.infUser_fotoPerfil.TabStop = false;
             // 
-            // infEmp_imgLogo
+            // uPainel
             // 
-            this.infEmp_imgLogo.Image = global::BUI.Properties.Resources.Cube_Molecule_256;
-            this.infEmp_imgLogo.Location = new System.Drawing.Point(12, 6);
-            this.infEmp_imgLogo.Margin = new System.Windows.Forms.Padding(4);
-            this.infEmp_imgLogo.Name = "infEmp_imgLogo";
-            this.infEmp_imgLogo.Size = new System.Drawing.Size(48, 48);
-            this.infEmp_imgLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.infEmp_imgLogo.TabIndex = 0;
-            this.infEmp_imgLogo.TabStop = false;
+            this.uPainel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uPainel.Location = new System.Drawing.Point(232, 0);
+            this.uPainel.Name = "uPainel";
+            this.uPainel.Size = new System.Drawing.Size(596, 64);
+            this.uPainel.TabIndex = 2;
             // 
-            // Header
+            // toolHeader
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -153,14 +153,14 @@
             this.Controls.Add(this.uPainel);
             this.Controls.Add(this.inf_User);
             this.Controls.Add(this.inf_Empresa);
-            this.Name = "Header";
+            this.Name = "toolHeader";
             this.Size = new System.Drawing.Size(1032, 64);
             this.inf_Empresa.ResumeLayout(false);
             this.inf_Empresa.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.infEmp_imgLogo)).EndInit();
             this.inf_User.ResumeLayout(false);
             this.inf_User.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.infUser_fotoPerfil)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.infEmp_imgLogo)).EndInit();
             this.ResumeLayout(false);
 
         }

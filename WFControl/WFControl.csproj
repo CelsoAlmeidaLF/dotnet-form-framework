@@ -50,12 +50,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="ViewsLogin\LoginView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ViewsLogin\LoginView.Designer.cs">
-      <DependentUpon>LoginView.cs</DependentUpon>
-    </Compile>
     <Compile Include="ViewsToolbox\toolHeader.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -73,9 +67,6 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ViewsLogin\LoginView.resx">
-      <DependentUpon>LoginView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewsToolbox\toolHeader.resx">
       <DependentUpon>toolHeader.cs</DependentUpon>
