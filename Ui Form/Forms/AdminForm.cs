@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Windows.Forms;
 
 namespace Systekna.Framework.Forms
@@ -21,7 +22,20 @@ namespace Systekna.Framework.Forms
 
         private void AdminForm_Load(object sender, EventArgs e)
         {
-            sectionViews.Start(true, "Documents [0]");
+            DataTable dt = new DataTable("Users");
+            DataRow dr;
+            {
+                dt.Columns.Add("Name");
+                dt.Columns.Add("Celular");
+                dt.Columns.Add("Email");
+
+                dr = dt.NewRow();
+                dr["Name"] = "Celso de Almeida Leite Filho";
+                dr["Celular"] = "11 997870299";
+                dr["Email"] = "celso.almeida.leite@hotmail.com";
+                dt.Rows.Add(dr);
+            }
+            sectionViews.Start(true, "Documents [0]", dt);
         }
     }
 }

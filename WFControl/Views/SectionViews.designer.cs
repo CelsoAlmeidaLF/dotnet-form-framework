@@ -35,8 +35,11 @@
             this.linha = new System.Windows.Forms.Panel();
             this.linhaToolbar = new System.Windows.Forms.Panel();
             this.Area = new System.Windows.Forms.Panel();
+            this.dgv = new System.Windows.Forms.DataGridView();
             this.uToolbar.SuspendLayout();
             this.toolbarTitle.SuspendLayout();
+            this.Area.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
             // uToolbar
@@ -110,12 +113,24 @@
             // Area
             // 
             this.Area.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
+            this.Area.Controls.Add(this.dgv);
             this.Area.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Area.Location = new System.Drawing.Point(0, 24);
             this.Area.Name = "Area";
             this.Area.Size = new System.Drawing.Size(925, 523);
             this.Area.TabIndex = 1;
             this.Area.Visible = false;
+            // 
+            // dgv
+            // 
+            this.dgv.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
+            this.dgv.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv.Location = new System.Drawing.Point(0, 0);
+            this.dgv.Name = "dgv";
+            this.dgv.Size = new System.Drawing.Size(925, 523);
+            this.dgv.TabIndex = 0;
             // 
             // SectionViews
             // 
@@ -128,6 +143,8 @@
             this.uToolbar.ResumeLayout(false);
             this.toolbarTitle.ResumeLayout(false);
             this.toolbarTitle.PerformLayout();
+            this.Area.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -141,5 +158,6 @@
         private System.Windows.Forms.Label TitleDocument;
         private System.Windows.Forms.Panel linha;
         private System.Windows.Forms.Panel linhaToolbar;
+        private System.Windows.Forms.DataGridView dgv;
     }
 }
