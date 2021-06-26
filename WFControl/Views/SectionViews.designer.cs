@@ -48,7 +48,7 @@
             this.uToolbar.Dock = System.Windows.Forms.DockStyle.Top;
             this.uToolbar.Location = new System.Drawing.Point(0, 0);
             this.uToolbar.Name = "uToolbar";
-            this.uToolbar.Size = new System.Drawing.Size(1032, 24);
+            this.uToolbar.Size = new System.Drawing.Size(925, 24);
             this.uToolbar.TabIndex = 0;
             // 
             // toolbarTitle
@@ -104,7 +104,7 @@
             this.linhaToolbar.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.linhaToolbar.Location = new System.Drawing.Point(0, 22);
             this.linhaToolbar.Name = "linhaToolbar";
-            this.linhaToolbar.Size = new System.Drawing.Size(1032, 2);
+            this.linhaToolbar.Size = new System.Drawing.Size(925, 2);
             this.linhaToolbar.TabIndex = 2;
             // 
             // Area
@@ -113,7 +113,7 @@
             this.Area.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Area.Location = new System.Drawing.Point(0, 24);
             this.Area.Name = "Area";
-            this.Area.Size = new System.Drawing.Size(1032, 608);
+            this.Area.Size = new System.Drawing.Size(925, 523);
             this.Area.TabIndex = 1;
             this.Area.Visible = false;
             // 
@@ -124,7 +124,7 @@
             this.Controls.Add(this.Area);
             this.Controls.Add(this.uToolbar);
             this.Name = "SectionViews";
-            this.Size = new System.Drawing.Size(1032, 632);
+            this.Size = new System.Drawing.Size(925, 547);
             this.uToolbar.ResumeLayout(false);
             this.toolbarTitle.ResumeLayout(false);
             this.toolbarTitle.PerformLayout();
